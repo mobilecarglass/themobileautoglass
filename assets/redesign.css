@@ -16,3 +16,29 @@
 
 /* Source-content layout */
 .long-copy{max-width:900px}.long-copy h2{font-size:clamp(2rem,3vw,3rem);margin-top:0}.long-copy h3{font-size:1.45rem;margin-top:34px}.long-copy p{color:#444;margin:0 0 18px}.long-copy ul{padding-left:22px;margin:12px 0 24px}.long-copy li{margin:7px 0}.service-list{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:22px 0 30px}.service-pill{background:#f4f4f4;border-left:4px solid var(--red);padding:13px 12px;font-weight:800;font-size:.9rem}.models{columns:3;column-gap:30px}.models li{break-inside:avoid}.source-note{font-size:.9rem;color:#777}.wide-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.wide-gallery img{aspect-ratio:16/10;object-fit:cover;width:100%}@media(max-width:900px){.service-list{grid-template-columns:1fr 1fr}.models{columns:2}}@media(max-width:680px){.service-list,.wide-gallery{grid-template-columns:1fr}.models{columns:1}}
+
+/* Dedicated quote integration */
+.contact-section{background:#f7f7f7}
+.contact-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:42px;align-items:start}
+.contact-grid>*{min-width:0}
+.contact-info h2,.quote-form-card h2{font-size:clamp(2rem,3vw,3rem)}
+.contact-info>p{font-size:1.05rem;color:#444;max-width:620px}
+.contact-details{margin-top:28px;border-top:1px solid #ddd;padding-top:22px}
+.contact-details h3{font-size:1.5rem;margin:0 0 10px}
+.contact-details p{color:#555;margin:0 0 14px}
+.contact-details a{font-weight:800;color:var(--red)}
+.contact-service-area{font-size:.9rem;font-weight:800;color:var(--red)!important}
+.quote-form-card{min-width:0;max-width:100%;overflow:hidden;background:#fff;border:1px solid var(--line);padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.quote-form-card h2{margin-bottom:14px}
+.quote-form-card .red-rule{margin-bottom:22px}
+.quote-iframe-wrap{width:100%;max-width:100%;min-width:0;overflow:hidden}
+.quote-iframe-wrap iframe{display:block;width:100%;max-width:100%;min-width:0;height:1600px;border:0}
+@media(max-width:900px){
+  .contact-grid{grid-template-columns:1fr;gap:35px}
+  .quote-form-card{padding:24px}
+  .quote-iframe-wrap iframe{height:1600px}
+}
+@media(max-width:680px){
+  .quote-form-card{padding:18px}
+  .quote-iframe-wrap iframe{height:1650px}
+}
